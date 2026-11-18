@@ -2,7 +2,7 @@
 
 **Hands-on IAM Security Analyst portfolio lab** · Active Directory · PowerShell · RBAC · Least Privilege
 
-> **Lab status:** Joiner account provisioning and account-status remediation documented. Mover and Leaver scenarios are planned. This is a simulated business scenario using fictional identities, not production employment experience.
+> **Lab status:** Joiner documented; Mover IT-to-Finance AD validation passed (screenshots pending); Leaver planned. This is a simulated business scenario using fictional identities, not production employment experience.
 
 ## Business context
 
@@ -62,6 +62,12 @@ Enable-ADAccount -Identity "jcarter"
 
 See [Joiner case study](docs/IAM-JML-001-joiner.md) and [validation commands](scripts/validation-commands.ps1).
 
+## IAM-JML-002 — Mover (IT to Finance)
+
+The fictional employee `jcarter` was transferred from **Information Technology / IT Support Specialist** to **Finance / Financial Systems Analyst**. Post-change PowerShell output confirmed `Enabled = True` and group membership of `Domain Users` and `SG-Finance-Users`, with no `SG-IT-Users` reported. This verifies the AD group transition, not downstream application permissions.
+
+See the [Mover case study](docs/IAM-JML-002-mover.md). Screenshots are pending upload.
+
 ## Screenshot evidence
 
 The following screenshots are uploaded from the lab:
@@ -93,7 +99,8 @@ The following screenshots are uploaded from the lab:
 - [x] Detect disabled account and verify remediation
 - [x] Upload Joiner lab screenshots
 - [ ] Recheck post-remediation group membership
-- [ ] Mover: transfer IT to Finance and validate old access removal
+- [x] Mover: transfer IT to Finance and validate AD group change
+- [ ] Upload Mover before/after screenshots and perform resource-level authorization checks
 - [ ] Leaver: disable account, remove authorized access, and validate deprovisioning
 - [ ] Entra ID cloud-only extension (separate identities; no synchronization claimed)
 
