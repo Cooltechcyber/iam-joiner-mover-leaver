@@ -62,9 +62,26 @@ Enable-ADAccount -Identity "jcarter"
 
 See [Joiner case study](docs/IAM-JML-001-joiner.md) and [validation commands](scripts/validation-commands.ps1).
 
-## Evidence
+## Screenshot evidence
 
-Screenshots are captured from the lab and will be added to [screenshots/](screenshots/README.md). Evidence includes the OU structure, departmental security groups, and account-status **before/after** PowerShell output. No screenshots are embedded yet.
+The following screenshots are uploaded from the lab:
+
+### Active Directory organizational units
+![IAM Lab OU structure](screenshots/01-iam-lab-ou-structure.png)
+
+### Departmental security groups
+![Departmental security groups](screenshots/02-department-security-groups.png)
+
+### Joiner provisioning
+![Joiner account provisioning](screenshots/03-joiner-account-provisioning.png)
+
+### Initial group-membership validation
+![Joiner access validation](screenshots/04-joiner-access-validation.png)
+
+### Account-status remediation: enabled after corrective action
+![Account enabled after remediation](screenshots/06-joiner-account-enabled-after.png)
+
+**Evidence still needed:** `05-joiner-account-disabled-before.png` (initial `Enabled = False` PowerShell result). The initial disabled state is described in the case study, but its corresponding screenshot is not yet in the repository.
 
 ## Project roadmap
 
