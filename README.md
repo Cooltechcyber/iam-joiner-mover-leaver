@@ -2,7 +2,7 @@
 
 **Hands-on IAM Security Analyst portfolio lab** · Active Directory · PowerShell · RBAC · Least Privilege
 
-> **Lab status:** Joiner, Mover, and Leaver AD account/group validations documented. Leaver screenshots are pending. This is a simulated business scenario using fictional identities, not production employment experience.
+> **Lab status:** Joiner, Mover, and Leaver AD account/group validations documented. Leaver screenshots uploaded and linked. This is a simulated business scenario using fictional identities, not production employment experience.
 
 ## Business context
 
@@ -72,7 +72,7 @@ See the [Mover case study](docs/IAM-JML-002-mover.md). The four Mover before-and
 
 The fictional employee `jcarter` was offboarded in the on-premises AD lab. Post-change PowerShell output verified that the account was **disabled** (`Enabled = False`), the Finance departmental security group was **absent**, and `Domain Users` remained. The account record was retained.
 
-See the [Leaver case study](docs/IAM-JML-003-leaver.md). Screenshot evidence is pending upload. Existing sessions and application-specific permissions were not tested.
+See the [Leaver case study](docs/IAM-JML-003-leaver.md). Screenshot evidence is linked below. Existing sessions and application-specific permissions were not tested.
 
 ## Screenshot evidence
 
@@ -112,6 +112,20 @@ The following screenshots are uploaded from the lab:
 ### After — group membership
 ![Mover after group membership](screenshots/10-mover-after-group-membership.png)
 
+## Leaver screenshot evidence
+
+### Before — active account
+![Leaver before account status](screenshots/11-leaver-before-account-status.png)
+
+### Before — Finance group membership
+![Leaver before group membership](screenshots/12-leaver-before-group-membership.png)
+
+### After — disabled account
+![Leaver after account disabled](screenshots/13-leaver-after-account-disabled.png)
+
+### After — Finance group removed
+![Leaver after group removal](screenshots/14-leaver-after-group-removal.png)
+
 ## Project roadmap
 
 - [x] Create IAM lab OUs and departmental security groups
@@ -123,7 +137,7 @@ The following screenshots are uploaded from the lab:
 - [x] Upload Mover before/after screenshots
 - [ ] Perform resource-level authorization checks
 - [x] Leaver: disable AD account, remove Finance group, and validate AD state
-- [ ] Upload Leaver before/after screenshots
+- [x] Upload Leaver before/after screenshots
 - [ ] Entra ID cloud-only extension (separate identities; no synchronization claimed)
 
 ## Security takeaways
