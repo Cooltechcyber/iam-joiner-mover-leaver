@@ -78,17 +78,21 @@ The following screenshots are uploaded from the lab:
 ### Initial group-membership validation
 ![Joiner access validation](screenshots/04-joiner-access-validation.png)
 
+### Initial account-status finding: disabled before corrective action
+![Account disabled before remediation](screenshots/05-joiner-account-disabled-before.png)
+
 ### Account-status remediation: enabled after corrective action
 ![Account enabled after remediation](screenshots/06-joiner-account-enabled-after.png)
 
-**Evidence still needed:** `05-joiner-account-disabled-before.png` (initial `Enabled = False` PowerShell result). The initial disabled state is described in the case study, but its corresponding screenshot is not yet in the repository.
+**Evidence status:** Both the initial disabled-account state (`Enabled = False`) and the corrected enabled-account state (`Enabled = True`) are documented with screenshots.
 
 ## Project roadmap
 
 - [x] Create IAM lab OUs and departmental security groups
 - [x] Provision fictional Joiner account
 - [x] Detect disabled account and verify remediation
-- [ ] Upload screenshots and recheck post-remediation group membership
+- [x] Upload Joiner lab screenshots
+- [ ] Recheck post-remediation group membership
 - [ ] Mover: transfer IT to Finance and validate old access removal
 - [ ] Leaver: disable account, remove authorized access, and validate deprovisioning
 - [ ] Entra ID cloud-only extension (separate identities; no synchronization claimed)
