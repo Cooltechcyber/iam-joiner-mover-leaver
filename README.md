@@ -2,7 +2,7 @@
 
 **Hands-on IAM Security Analyst portfolio lab** · Active Directory · PowerShell · RBAC · Least Privilege
 
-> **Lab status:** Joiner documented; Mover IT-to-Finance AD validation passed (screenshots pending); Leaver planned. This is a simulated business scenario using fictional identities, not production employment experience.
+> **Lab status:** Joiner, Mover, and Leaver AD account/group validations documented. Leaver screenshots are pending. This is a simulated business scenario using fictional identities, not production employment experience.
 
 ## Business context
 
@@ -68,6 +68,12 @@ The fictional employee `jcarter` was transferred from **Information Technology /
 
 See the [Mover case study](docs/IAM-JML-002-mover.md). The four Mover before-and-after screenshots have been uploaded and linked below.
 
+## IAM-JML-003 — Leaver (Offboarding)
+
+The fictional employee `jcarter` was offboarded in the on-premises AD lab. Post-change PowerShell output verified that the account was **disabled** (`Enabled = False`), the Finance departmental security group was **absent**, and `Domain Users` remained. The account record was retained.
+
+See the [Leaver case study](docs/IAM-JML-003-leaver.md). Screenshot evidence is pending upload. Existing sessions and application-specific permissions were not tested.
+
 ## Screenshot evidence
 
 The following screenshots are uploaded from the lab:
@@ -116,7 +122,8 @@ The following screenshots are uploaded from the lab:
 - [x] Mover: transfer IT to Finance and validate AD group change
 - [x] Upload Mover before/after screenshots
 - [ ] Perform resource-level authorization checks
-- [ ] Leaver: disable account, remove authorized access, and validate deprovisioning
+- [x] Leaver: disable AD account, remove Finance group, and validate AD state
+- [ ] Upload Leaver before/after screenshots
 - [ ] Entra ID cloud-only extension (separate identities; no synchronization claimed)
 
 ## Security takeaways
