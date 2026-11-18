@@ -48,12 +48,12 @@ Domain Users
 
 A disabled AD account prevents normal new AD authentication, but this evidence does not independently verify termination of existing sessions, cloud identities, application-local accounts, access tokens, VPN sessions, or resource-specific permissions. No interactive login test or production approval was captured.
 
-## Screenshot evidence (pending upload)
+## Screenshot evidence (verified uploaded)
 
-- [ ] `screenshots/11-leaver-before-account-status.png`
-- [ ] `screenshots/12-leaver-before-group-membership.png`
-- [ ] `screenshots/13-leaver-after-account-disabled.png`
-- [ ] `screenshots/14-leaver-after-group-removal.png`
+- [x] `screenshots/11-leaver-before-account-status.png`
+- [x] `screenshots/12-leaver-before-group-membership.png`
+- [x] `screenshots/13-leaver-after-account-disabled.png`
+- [x] `screenshots/14-leaver-after-group-removal.png`
 
 ## Security takeaways
 
@@ -62,3 +62,17 @@ A disabled AD account prevents normal new AD authentication, but this evidence d
 - Remove obsolete departmental security group membership.
 - Verify both account status and group membership afterward.
 - Keep evidence claims bounded to the controls actually tested.
+
+## Screenshot gallery
+
+### Before — account status
+![Before account status](../screenshots/11-leaver-before-account-status.png)
+
+### Before — group membership
+![Before group membership](../screenshots/12-leaver-before-group-membership.png)
+
+### After — disabled account
+![After account disabled](../screenshots/13-leaver-after-account-disabled.png)
+
+### After — group removal
+![After group removal](../screenshots/14-leaver-after-group-removal.png)
