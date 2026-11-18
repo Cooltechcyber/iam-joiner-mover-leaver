@@ -51,13 +51,23 @@ The departmental RBAC assignment changed as intended, and stale IT group members
 
 ## Evidence checklist
 
-- [ ] `screenshots/07-mover-before-user-attributes.png`
-- [ ] `screenshots/08-mover-before-group-membership.png`
-- [ ] `screenshots/09-mover-after-user-attributes.png`
-- [ ] `screenshots/10-mover-after-group-membership.png`
+- [x] `screenshots/07-mover-before-user-attributes.png`
+- [x] `screenshots/08-mover-before-group-membership.png`
+- [x] `screenshots/09-mover-after-user-attributes.png`
+- [x] `screenshots/10-mover-after-group-membership.png`
 
-Screenshot checkboxes remain open until the files are verified in GitHub.
+All four screenshot filenames were verified in GitHub.
 
 ## Outcome
 
-**AD identity and group validation: Passed.** Screenshots and resource-level authorization tests remain pending.
+**AD identity and group validation: Passed.** Screenshot files uploaded; resource-level authorization tests remain pending.
+
+## Screenshot gallery
+
+![Before user attributes](../screenshots/07-mover-before-user-attributes.png)
+
+![Before group membership](../screenshots/08-mover-before-group-membership.png)
+
+![After user attributes](../screenshots/09-mover-after-user-attributes.png)
+
+![After group membership](../screenshots/10-mover-after-group-membership.png)
