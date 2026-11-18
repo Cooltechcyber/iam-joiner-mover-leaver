@@ -66,7 +66,7 @@ See [Joiner case study](docs/IAM-JML-001-joiner.md) and [validation commands](sc
 
 The fictional employee `jcarter` was transferred from **Information Technology / IT Support Specialist** to **Finance / Financial Systems Analyst**. Post-change PowerShell output confirmed `Enabled = True` and group membership of `Domain Users` and `SG-Finance-Users`, with no `SG-IT-Users` reported. This verifies the AD group transition, not downstream application permissions.
 
-See the [Mover case study](docs/IAM-JML-002-mover.md). Screenshots are pending upload.
+See the [Mover case study](docs/IAM-JML-002-mover.md). The four Mover before-and-after screenshots have been uploaded and linked below.
 
 ## Screenshot evidence
 
@@ -92,6 +92,20 @@ The following screenshots are uploaded from the lab:
 
 **Evidence status:** Both the initial disabled-account state (`Enabled = False`) and the corrected enabled-account state (`Enabled = True`) are documented with screenshots.
 
+## Mover screenshot evidence
+
+### Before — account attributes
+![Mover before user attributes](screenshots/07-mover-before-user-attributes.png)
+
+### Before — group membership
+![Mover before group membership](screenshots/08-mover-before-group-membership.png)
+
+### After — account attributes
+![Mover after user attributes](screenshots/09-mover-after-user-attributes.png)
+
+### After — group membership
+![Mover after group membership](screenshots/10-mover-after-group-membership.png)
+
 ## Project roadmap
 
 - [x] Create IAM lab OUs and departmental security groups
@@ -100,7 +114,8 @@ The following screenshots are uploaded from the lab:
 - [x] Upload Joiner lab screenshots
 - [ ] Recheck post-remediation group membership
 - [x] Mover: transfer IT to Finance and validate AD group change
-- [ ] Upload Mover before/after screenshots and perform resource-level authorization checks
+- [x] Upload Mover before/after screenshots
+- [ ] Perform resource-level authorization checks
 - [ ] Leaver: disable account, remove authorized access, and validate deprovisioning
 - [ ] Entra ID cloud-only extension (separate identities; no synchronization claimed)
 
